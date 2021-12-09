@@ -32,8 +32,8 @@ struct WelcomeView: View {
                 
                 Spacer()
                 // Exploration Mode
-                NavigationLink(destination: MainNavigationView()) {
-                    Text("Explore")
+                NavigationLink(destination: BeaconDebugView()) {
+                    Text("Debug")
                         .navigationTitle("")
                         .navigationBarHidden(true)
                         .foregroundColor(Constants.accentColor)

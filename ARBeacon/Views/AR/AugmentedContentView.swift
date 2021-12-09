@@ -10,7 +10,7 @@ import RealityKit
 import ARKit
 
 struct AugmentedContentView : View {
-    @ObservedObject private var beaconDetector = BeaconDetector()
+    @ObservedObject private var beaconDetector = BeaconDetector(beaconUUID: UUID(uuidString: "CC6ED3C0-477E-417B-81E1-0A62D6504061")!)
     @State var objectIsPlaced = false
     var body: some View {
         ZStack {

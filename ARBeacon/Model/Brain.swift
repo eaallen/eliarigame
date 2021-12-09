@@ -11,7 +11,6 @@ import Foundation
 // brain will be a very state full component so I am makeing it a class
 // I think it would be best to only declare Brain once and use it in the Portal ViewModel
 class Brain {
-    let beaconDetector = BeaconDetector()
     var currentTask = InteractionCollection.ARCovid1
     
 }
