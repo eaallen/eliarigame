@@ -19,7 +19,7 @@ struct MainNavigationView: View {
 //        UITabBar.appearance().backgroundColor = Constants.tabColor
         UITabBar.appearance().barTintColor = .systemBackground
         UINavigationBar.appearance().barTintColor = .systemBackground
-//          UITabBar.appearance().unselectedItemTintColor = Constants.tintColor
+//          UITabBar.appearance().unselectedItemTintColor = Constants.black
 //       self.selectedTab = selectedTab
       }
     
@@ -91,13 +91,13 @@ struct MainNavigationView: View {
                             ZStack {
                                 Image(systemName: tabBarImageNames[num]) //dynamically set system image
                                     .font(.system(size: 52, weight: .bold))
-                                    .foregroundColor(Constants.accentColor)
+                                    .foregroundColor(Constants.white)
                             //add circle outline for the camera icon?
                             }
                         } else {
                             Image(systemName: tabBarImageNames[num])
                                 .font(.system(size: 30, weight: .bold))
-                                .foregroundColor(selection == num ? Constants.tintColor : Constants.accentColor)
+                                .foregroundColor(selection == num ? Constants.black : Constants.white)
                         }
                         
                         Spacer()
@@ -112,17 +112,6 @@ struct MainNavigationView: View {
             .navigationBarBackButtonHidden(true)
     } // end of body View
 }
-
-private struct Constants {
-    static let tintColor: Color = .black
-    static let accentColor: Color = .white
-    static let customGreen: Color = Color(hex: "#1BA689")
-    static let customDarkGreen: Color = Color(hex: "#326e75")
-    static let customBlue: Color = Color(hex: "#41c1c0")
-    static let customLightBlue: Color = Color(hex: "#d0ecef")
-    static let customOrange: Color = Color(hex: "#fbcbab")
-}
-
 
 //
 //  MainNavigationView.swift
@@ -148,7 +137,7 @@ struct TopHeader: View {
                 Text(currentTab)
                     .fontWeight(.bold)
                     .font(.system(size: 32))
-                    .foregroundColor(.white)
+                    .foregroundColor(Constants.white)
                 Spacer(minLength: 0)
                 
 //                Button(action: { // add image icons here if desired

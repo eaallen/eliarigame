@@ -8,7 +8,7 @@
 //
 //    init() {
 //        UITabBar.appearance().backgroundColor = Constants.tabColor
-//          UITabBar.appearance().tintColor = Constants.tintColor
+//          UITabBar.appearance().black = Constants.tintColor
 //          UITabBar.appearance().unselectedItemTintColor = Constants.tintColor
 ////          self.selectedTab = selectedTab
 //      }

@@ -48,14 +48,3 @@ struct TaskView: View {
         }
     }
 }
-
-private struct Constants {
-    static let tintColor: Color = .black
-    static let accentColor: Color = .white
-    static let customGreen: Color = Color(hex: "#1BA689")
-    static let customDarkGreen: Color = Color(hex: "#326e75")
-    static let customBlue: Color = Color(hex: "#41c1c0")
-    static let customLightBlue: Color = Color(hex: "#d0ecef")
-    static let customOrange: Color = Color(hex: "#fbcbab")
-    static let cornerRadius: CGFloat = 15
-}
