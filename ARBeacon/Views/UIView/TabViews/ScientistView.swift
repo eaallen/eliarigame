@@ -34,47 +34,49 @@ struct ScientistViewForMission: View {
     var displayText: String
     
     var body: some View {
-        ZStack {
-            Rectangle().scaledToFit().padding()
-            Text(displayText)
-                .foregroundColor(.white)
-                .frame(width: 350, alignment: .center)
-                .font(.system(size: 35, weight: .bold))
-                .aspectRatio(contentMode: .fit)
-                .overlay(Image("scientist")
-                            .padding(20)
-                            .offset(x: 80, y: 250)
-                         )
-            NavigationLink(destination: ArViewIdMapping(id: arViewId)) {
-//                buttonDisabled = true
-//                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-//                    buttonDisabled = false
-//                }
-                Text("Continue")
-                    .navigationTitle("")
-                    .navigationBarHidden(true)
-                    .foregroundColor(Constants.accentColor)
-                    .padding(.all, 10)
-                
+        GeometryReader { geometry in
+            ZStack {
+                Rectangle().scaledToFit().padding()
+                Text(displayText)
+                    .foregroundColor(Constants.whiteBlack)
+                    .frame(width: geometry.size.width * 0.9 , alignment: .center)
+                    .font(.system(size: 35, weight: .bold))
+                    .aspectRatio(contentMode: .fit)
+                    .overlay(Image("scientist")
+                                .padding(20)
+                                .offset(x: 80, y: 250)
+                             )
+                NavigationLink(destination: ArViewIdMapping(id: arViewId)) {
+    //                buttonDisabled = true
+    //                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+    //                    buttonDisabled = false
+    //                }
+                    Text("Continue")
+                        .navigationTitle("")
+                        .navigationBarHidden(true)
+                        .foregroundColor(Constants.white)
+                        .padding(.all, 10)
+                    
+                }
+                .disabled(buttonDisabled)
+                .font(.system(size: 24))
+                .frame(width: FileConstants.frameWidth, height: FileConstants.frameHeight, alignment: .center)
+                .background(animate ? Constants.customDarkGreen : Constants.customGreen)
+                .cornerRadius(FileConstants.cornerRadius)
+                .padding(.horizontal, animate ? 10 : 20)
+                .shadow(
+                    color: animate ? Constants.customGreen : Constants.customDarkGreen,
+                    radius: animate ? 20 : 10,
+                    x: 0,
+                    y: animate ? 20 : 10)
+                .scaleEffect(animate ? 1.05 : 1.0)
+    //            .offset(y: animate ? 3 : 0)
+                .offset(x: -70, y: 200)
             }
-            .disabled(buttonDisabled)
-            .font(.system(size: 24))
-            .frame(width: Constants.frameWidth, height: Constants.frameHeight, alignment: .center)
-            .background(animate ? Constants.customDarkGreen : Constants.customGreen)
-            .cornerRadius(Constants.cornerRadius)
-            .padding(.horizontal, animate ? 10 : 20)
-            .shadow(
-                color: animate ? Constants.customGreen : Constants.customDarkGreen,
-                radius: animate ? 20 : 10,
-                x: 0,
-                y: animate ? 20 : 10)
-            .scaleEffect(animate ? 1.05 : 1.0)
-//            .offset(y: animate ? 3 : 0)
-            .offset(x: -70, y: 200)
+            
+            .background(.clear)
+            .onAppear(perform: addAnimation)
         }
-        
-        .background(.clear)
-        .onAppear(perform: addAnimation)
     }
     
     func addAnimation() {
@@ -91,16 +93,7 @@ struct ScientistViewForMission: View {
     }
 }
 
-private struct Constants {
-    static let tintColor: Color = .black
-    static let accentColor: Color = .white
-    static let customGreen: Color = Color(hex: "#1BA689")
-    static let customGreenUI: UIColor = UIColor(hex: "#1BA689")
-    static let customDarkGreen: Color = Color(hex: "#326e75")
-    static let customBlue: Color = Color(hex: "#41c1c0")
-    static let customLightBlue: Color = Color(hex: "#d0ecef")
-    static let customLightBlueUI: UIColor = UIColor(hex: "#d0ecef")
-    static let customOrange: Color = Color(hex: "#fbcbab")
+private struct FileConstants {
     
     static let frameWidth: CGFloat = 200
     static let frameHeight: CGFloat = 50

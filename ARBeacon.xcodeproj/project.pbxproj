@@ -58,6 +58,7 @@
 		DBFB0A6A2761CDDC00DEA056 /* ScientistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFB0A692761CDDC00DEA056 /* ScientistView.swift */; };
 		DBFB0A6C2761CDF100DEA056 /* ContinueButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFB0A6B2761CDF100DEA056 /* ContinueButtonView.swift */; };
 		DBFB0A6E2761CE2800DEA056 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFB0A6D2761CE2800DEA056 /* WelcomeView.swift */; };
+		DBFB0A782762A91C00DEA056 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFB0A772762A91C00DEA056 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 		DBFB0A692761CDDC00DEA056 /* ScientistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScientistView.swift; sourceTree = "<group>"; };
 		DBFB0A6B2761CDF100DEA056 /* ContinueButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButtonView.swift; sourceTree = "<group>"; };
 		DBFB0A6D2761CE2800DEA056 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		DBFB0A772762A91C00DEA056 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F8C7A5068A531FC6400B1288 /* Pods-ARBeacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBeacon.debug.xcconfig"; path = "Target Support Files/Pods-ARBeacon/Pods-ARBeacon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -340,6 +342,7 @@
 				DBC4492A275867D50075E6F1 /* QRScannerView.swift */,
 				DBFA0F542759386700E6F5E4 /* OldView.swift */,
 				DBFB0A6D2761CE2800DEA056 /* WelcomeView.swift */,
+				DBFB0A772762A91C00DEA056 /* Constants.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -580,6 +583,7 @@
 				DBFA0F572759666900E6F5E4 /* TaskModel.swift in Sources */,
 				68E741E627628CE500E54C1F /* HQTapHandler.swift in Sources */,
 				DB83B1A9275474DA00285BC9 /* HelpView.swift in Sources */,
+				DBFB0A782762A91C00DEA056 /* Constants.swift in Sources */,
 				DBFB0A6C2761CDF100DEA056 /* ContinueButtonView.swift in Sources */,
 				DBFB0A6A2761CDDC00DEA056 /* ScientistView.swift in Sources */,
 				68A2A878275C1C5A00D7A675 /* UIColor+Random.swift in Sources */,
@@ -783,6 +787,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "bluetooth-le arkit";
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -821,6 +826,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "bluetooth-le arkit";
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

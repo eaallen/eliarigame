@@ -48,7 +48,7 @@ struct WelcomeScreen: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 150, height: 150, alignment: .center)
-                    .foregroundColor(.white)
+                    .foregroundColor(Constants.white)
                 Spacer()
                 Spacer()
                 Spacer()
@@ -58,13 +58,13 @@ struct WelcomeScreen: View {
                 Text("Augmented Reality Experiences")
                     .font(.system(size: 30))
                     .fontWeight(.bold)
-                    .foregroundColor(Constants.accentColor)
+                    .foregroundColor(Constants.white)
                 Spacer()
                 Button {
                     self.showWelcomeScreen = false
                 } label: {
                     Text("Start")
-                        .foregroundColor(Constants.accentColor)
+                        .foregroundColor(Constants.white)
                         .font(.system(size: 72))
                         .frame(width: 300, height: 80)
                         .background(animate ? Constants.customBlue : Constants.customDarkGreen)
@@ -80,7 +80,7 @@ struct WelcomeScreen: View {
                     .offset(y: animate ? 7 : 0)
                 Spacer()
                 Text("BYU Life Science Museum")
-                    .foregroundColor(.white)
+                    .foregroundColor(Constants.white)
                 
             }
             .padding()
@@ -117,13 +117,13 @@ struct ModeView: View {
                         Text("Mission")
                             .navigationTitle("")
                             .navigationBarHidden(true)
-                            .foregroundColor(Constants.accentColor)
+                            .foregroundColor(Constants.white)
                             .padding(.all, 10)
                     }
                     .font(.system(size: 72))
-                    .frame(width: Constants.frameWidth, height: Constants.frameHeight, alignment: .center)
+                    .frame(width: FileConstants.frameWidth, height: FileConstants.frameHeight, alignment: .center)
                     .background(Constants.customGreen)
-                    .cornerRadius(Constants.cornerRadius)
+                    .cornerRadius(FileConstants.cornerRadius)
                     
                     Spacer()
                     // Exploration Mode
@@ -131,13 +131,13 @@ struct ModeView: View {
                         Text("Debug")
                             .navigationTitle("")
                             .navigationBarHidden(true)
-                            .foregroundColor(Constants.accentColor)
+                            .foregroundColor(Constants.white)
                             .padding(.all, 10)
                     }
                     .font(.system(size: 72))
-                    .frame(width: Constants.frameWidth, height: Constants.frameHeight, alignment: .center)
+                    .frame(width: FileConstants.frameWidth, height: FileConstants.frameHeight, alignment: .center)
                     .background(Constants.customGreen)
-                    .cornerRadius(Constants.cornerRadius)
+                    .cornerRadius(FileConstants.cornerRadius)
                     Spacer()
                 }
 //                .background(Constants.customGreen)
@@ -145,17 +145,8 @@ struct ModeView: View {
     } // end of body
 }
 
-private struct Constants {
-    static let tintColor: Color = .black
-    static let accentColor: Color = .white
-    static let customGreen: Color = Color(hex: "#1BA689")
-    static let customGreenUI: UIColor = UIColor(hex: "#1BA689")
-    static let customDarkGreen: Color = Color(hex: "#326e75")
-    static let customBlue: Color = Color(hex: "#41c1c0")
-    static let customLightBlue: Color = Color(hex: "#d0ecef")
-    static let customLightBlueUI: UIColor = UIColor(hex: "#d0ecef")
-    static let customOrange: Color = Color(hex: "#fbcbab")
-    
+private struct FileConstants {
+       
     static let frameWidth: CGFloat = 350
     static let frameHeight: CGFloat = 150
     static let cornerRadius: CGFloat = 15
