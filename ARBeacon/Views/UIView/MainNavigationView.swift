@@ -10,6 +10,8 @@ import PDFKit
 
 struct MainNavigationView: View {
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     @State private var selection = 0 //set the default tab
     @State private var showCameraModal = false
     
@@ -24,9 +26,10 @@ struct MainNavigationView: View {
     let tabBarImageNames = ["checklist", "map.fill", "camera.fill", "questionmark", "person.fill"]
     
     var body: some View {
+        
+        // MARK: - Tab Navigation Bars
         VStack(spacing: 0){
             ZStack{
-                
                 Spacer()
                     .fullScreenCover(isPresented: $showCameraModal, content: {
                         ZStack {
@@ -42,12 +45,11 @@ struct MainNavigationView: View {
                 switch selection {
                 case 0: //Task View
 //                    NavigationView {
-                            TaskView(taskContent: TaskViewModel())
+                            TaskView(taskContent: ReadData())
 //                    }
                 case 1:
                     NavigationView {
                         MapView()
-                            
                     }
                 case 2: //Camera
                     NavigationView {
@@ -69,10 +71,8 @@ struct MainNavigationView: View {
                 }
             }
             
-//            Spacer()
-            
             Divider()
-                .padding(.bottom, 8)
+//                .padding(.bottom, 8)
             
             HStack {
                 ForEach(0..<5) { num in
@@ -89,7 +89,7 @@ struct MainNavigationView: View {
                         
                         if num == 2 {
                             ZStack {
-                                Image(systemName: tabBarImageNames[num])
+                                Image(systemName: tabBarImageNames[num]) //dynamically set system image
                                     .font(.system(size: 52, weight: .bold))
                                     .foregroundColor(Constants.accentColor)
                             //add circle outline for the camera icon?
@@ -106,14 +106,11 @@ struct MainNavigationView: View {
             }
             .padding(.top, 15)
             .background(Constants.customGreen)
-        }
-    }
-}
-
-struct MainNavigationView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainNavigationView()
-    }
+        } // end of VStack
+            .navigationBarTitle("") //this must be empty
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
+    } // end of body View
 }
 
 private struct Constants {
@@ -124,7 +121,6 @@ private struct Constants {
     static let customBlue: Color = Color(hex: "#41c1c0")
     static let customLightBlue: Color = Color(hex: "#d0ecef")
     static let customOrange: Color = Color(hex: "#fbcbab")
-    
 }
 
 
@@ -173,8 +169,3 @@ struct TopHeader: View {
     }
 }
 
-struct NavigationView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainNavigationView()
-    }
-}
