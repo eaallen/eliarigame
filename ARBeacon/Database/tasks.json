@@ -1,0 +1,97 @@
+[
+    {
+        "task_id": "94b744f5-9f7f-4486-ba30-8888eed5ec8b", 
+        "ar_view_id": "b554751d-f404-4045-928b-ca78af5d3088",
+        "task_name": "Put On Your Mask",
+        "task_description": "Before we get started, put on your virtual mask to protect yourself and others from COVID-19!", 
+        "task_order_number": 1,
+        "is_completed": true,
+        "depends_on": "94b744f5-9f7f-4486-ba30-8888eed5ec8b",
+        "sub_tasks": []
+    },
+    {
+        "task_id": "3a63b6d3-9cca-4345-b6a0-c162897d9169", 
+        "ar_view_id": "44e9fd5f-d82d-4557-810b-f688f1861946",
+        "task_name": "Find the Equipment",
+        "task_description": "We lost our equipment! Can you help us find it?",
+        "task_order_number": 2,
+        "is_completed": false, 
+        "depends_on": "94b744f5-9f7f-4486-ba30-8888eed5ec8b",
+        "sub_tasks": [
+            {
+                "subTaskId": "caab6b57-5ba4-4d88-a06a-74224136e79d",
+                "subTaskName": "Find the Microscope",
+                "subTaskDescription": "We need a microscope to analyze the new variant. Can you find it?",
+                "sub_task_order_number": 1,
+                "sub_task_is_completed": false, 
+                "sub_task_depends_on": "caab6b57-5ba4-4d88-a06a-74224136e79d"
+            },
+            {
+                "subTaskId": "2c116e78-e76c-41cf-9691-ea83317480dd",
+                "subTaskName": "Find the flask",
+                "subTaskDescription": "Next we need to find the flask so we can create a vaccine!",
+                "sub_task_order_number": 2,
+                "sub_task_is_completed": false, 
+                "sub_task_depends_on": "caab6b57-5ba4-4d88-a06a-74224136e79d"
+            },
+            {
+                "subTaskId": "2c932982-dfd5-4704-8ac3-873df654205f",
+                "subTaskName": "Find the syringe",
+                "subTaskDescription": "Find the syringe so we can help people that are sick!",
+                "sub_task_order_number": 3,
+                "sub_task_is_completed": false, 
+                "sub_task_depends_on": "2c116e78-e76c-41cf-9691-ea83317480dd"
+            }
+        ]
+    },
+    {
+        "task_id": "34f16a8a-9edc-4dd5-8657-bc3ffb51eadd", 
+        "ar_view_id": "dc7b0e4c-5eb3-4256-8d5a-3184e06837c4",
+        "task_name": "Collect the New COVID-19 Variant",
+        "task_description": "There is a new COVID-19 Variant in the building! Use the flask to collect as many samples as you can so we can stop it from spreading!", 
+        "task_order_number": 3,
+        "is_completed": false, 
+        "depends_on": "3a63b6d3-9cca-4345-b6a0-c162897d9169", 
+        "sub_tasks": []
+    },
+    {
+        "task_id": "41fee47d-9c26-4d9c-b670-1c3e92e5a71b", 
+        "ar_view_id": "b8e211e5-ada5-4f99-92c7-38f101f109df",
+        "task_name": "Test Virus",
+        "task_description": "Lets run some tests on the new virus. Bring your samples and equipment to the lab.", 
+        "task_order_number": 4,
+        "is_completed": false, 
+        "depends_on": "34f16a8a-9edc-4dd5-8657-bc3ffb51eadd",
+        "sub_tasks": []
+    },
+    {
+        "task_id": "3fd0a6b1-7daf-4e19-9b4b-77eb99758a92", 
+        "ar_view_id": "50cbd16c-e1b0-492e-9736-183cb3191801",
+        "task_name": "Task 5",
+        "task_description": "Task 5 Description",
+        "task_order_number": 5,
+        "is_completed": false, 
+        "depends_on": "41fee47d-9c26-4d9c-b670-1c3e92e5a71b",
+        "sub_tasks": []
+    },
+    {
+        "task_id": "629cbf4a-33b1-4e4d-a057-6e07913e1985", 
+        "ar_view_id": "0b4dc595-ba0f-4d0f-9ae6-b6ad03ce6138",
+        "task_name": "Task 6",
+        "task_description": "Task 6 Description",
+        "task_order_number": 6,
+        "is_completed": false, 
+        "depends_on": "3fd0a6b1-7daf-4e19-9b4b-77eb99758a92",
+        "sub_tasks": []
+    },
+    {
+        "task_id": "7297a33b-f621-4843-bba3-7b99b68a2d13", 
+        "ar_view_id": "32f52cb9-035b-4602-aa11-a0ba9162116b",
+        "task_name": "Task 7",
+        "task_description": "Task 7 description",
+        "task_order_number": 7,
+        "is_completed": false, 
+        "depends_on": "629cbf4a-33b1-4e4d-a057-6e07913e1985",
+        "sub_tasks": []
+    }
+]
