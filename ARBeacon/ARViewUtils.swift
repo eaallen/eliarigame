@@ -33,7 +33,7 @@ extension ARView {
         addModelEntityToAnchorThenScene(modelName: modelName, scaleTo: scaleTo, anchor: anchorEntity)
     }
     
-    private func addModelEntityToAnchorThenScene(modelName:String, scaleTo: SIMD3<Float>?, anchor: AnchorEntity){
+    func addModelEntityToAnchorThenScene(modelName:String, scaleTo: SIMD3<Float>?, anchor: AnchorEntity){
         if let modelEntity = try? ModelEntity.loadModel(named: modelName){
             modelEntity.generateCollisionShapes(recursive: true)
             if let scale = scaleTo {

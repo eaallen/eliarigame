@@ -15,6 +15,8 @@ struct ArViewIdMapping: View {
             AugmentedContentView()
         } else if id == "b8e211e5-ada5-4f99-92c7-38f101f109df" {
             HQView()
+        } else if id == "50cbd16c-e1b0-492e-9736-183cb3191801" {
+            NeonVentFanView()
         } else {
             MainNavigationView()
         }
