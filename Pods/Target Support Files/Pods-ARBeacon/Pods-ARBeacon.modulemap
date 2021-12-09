@@ -1,0 +1,6 @@
+framework module Pods_ARBeacon {
+  umbrella header "Pods-ARBeacon-umbrella.h"
+
+  export *
+  module * { export * }
+}

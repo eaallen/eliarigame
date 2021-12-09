@@ -1,0 +1,954 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		681995402743EE90007FA69F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6819953F2743EE90007FA69F /* AppDelegate.swift */; };
+		681995422743EE90007FA69F /* AugmentedContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681995412743EE90007FA69F /* AugmentedContentView.swift */; };
+		681995442743EE90007FA69F /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 681995432743EE90007FA69F /* Experience.rcproject */; };
+		681995462743EE91007FA69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 681995452743EE91007FA69F /* Assets.xcassets */; };
+		681995492743EE91007FA69F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 681995482743EE91007FA69F /* Preview Assets.xcassets */; };
+		681995532743EE91007FA69F /* ARBeaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681995522743EE91007FA69F /* ARBeaconTests.swift */; };
+		6819955D2743EE91007FA69F /* ARBeaconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6819955C2743EE91007FA69F /* ARBeaconUITests.swift */; };
+		6819955F2743EE91007FA69F /* ARBeaconUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6819955E2743EE91007FA69F /* ARBeaconUITestsLaunchTests.swift */; };
+		68554F9827604FAB00E6B391 /* ARGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68554F9727604FAB00E6B391 /* ARGameView.swift */; };
+		68554F9A276066CB00E6B391 /* View+Navigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68554F99276066CB00E6B391 /* View+Navigate.swift */; };
+		68A2A8672758930D00D7A675 /* covid19.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 68A2A8662758930D00D7A675 /* covid19.usdz */; };
+		68A2A86B2758940600D7A675 /* ARModelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2A86A2758940600D7A675 /* ARModelHandler.swift */; };
+		68A2A8702758B65300D7A675 /* BeaconDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2A86F2758B65300D7A675 /* BeaconDetector.swift */; };
+		68A2A872275A6CF800D7A675 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2A871275A6CF800D7A675 /* Brain.swift */; };
+		68A2A874275A707B00D7A675 /* Interaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2A873275A707B00D7A675 /* Interaction.swift */; };
+		68A2A876275C13B100D7A675 /* ARViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2A875275C13B100D7A675 /* ARViewUtils.swift */; };
+		68A2A878275C1C5A00D7A675 /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2A877275C1C5A00D7A675 /* UIColor+Random.swift */; };
+		68A2A87A275E3B8E00D7A675 /* ARModelOnTapHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2A879275E3B8E00D7A675 /* ARModelOnTapHandler.swift */; };
+		68A2A87D275E4A4100D7A675 /* Covid19TapHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2A87C275E4A4100D7A675 /* Covid19TapHandler.swift */; };
+		68A2A881275EE40F00D7A675 /* NeonXStickAni.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 68A2A880275EE40F00D7A675 /* NeonXStickAni.usdz */; };
+		68A2A883275F17E300D7A675 /* HQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2A882275F17E300D7A675 /* HQView.swift */; };
+		68B9427B2743FAF10009D2F9 /* OpenTrivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9427A2743FAF10009D2F9 /* OpenTrivia.swift */; };
+		68B9427E2743FB590009D2F9 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9427D2743FB590009D2F9 /* StringUtils.swift */; };
+		68B942812746AE9F0009D2F9 /* ControlBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B942802746AE9F0009D2F9 /* ControlBoard.swift */; };
+		68B942852746AF390009D2F9 /* IBeaconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B942842746AF390009D2F9 /* IBeaconView.swift */; };
+		B22FD94DB7D2A6CBF381CC3F /* Pods_ARBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38397B08D473411B4D5A5DC0 /* Pods_ARBeacon.framework */; };
+		DB83B18627546A9B00285BC9 /* MainNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B18527546A9A00285BC9 /* MainNavigationView.swift */; };
+		DB83B1A7275474C200285BC9 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B1A6275474C200285BC9 /* TaskView.swift */; };
+		DB83B1A9275474DA00285BC9 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B1A8275474DA00285BC9 /* HelpView.swift */; };
+		DB83B1AB275474F000285BC9 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B1AA275474F000285BC9 /* AccountView.swift */; };
+		DB83B1AD2754752400285BC9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B1AC2754752400285BC9 /* MapView.swift */; };
+		DBC449252758676A0075E6F1 /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC449242758676A0075E6F1 /* ColorHex.swift */; };
+		DBC44927275867950075E6F1 /* AppSetupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC44926275867950075E6F1 /* AppSetupModel.swift */; };
+		DBC44929275867B20075E6F1 /* AppSetupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC44928275867B20075E6F1 /* AppSetupViewModel.swift */; };
+		DBC4492B275867D50075E6F1 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC4492A275867D50075E6F1 /* QRScannerView.swift */; };
+		DBC4492E275868760075E6F1 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = DBC4492D275868760075E6F1 /* CodeScanner */; };
+		DBFA0F5327589E9E00E6F5E4 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA0F5227589E9E00E6F5E4 /* TaskViewModel.swift */; };
+		DBFA0F552759386700E6F5E4 /* OldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA0F542759386700E6F5E4 /* OldView.swift */; };
+		DBFA0F572759666900E6F5E4 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA0F562759666900E6F5E4 /* TaskModel.swift */; };
+		DBFA0F592759667D00E6F5E4 /* ARDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA0F582759667D00E6F5E4 /* ARDatabase.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6819954F2743EE91007FA69F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 681995342743EE90007FA69F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6819953B2743EE90007FA69F;
+			remoteInfo = ARBeacon;
+		};
+		681995592743EE91007FA69F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 681995342743EE90007FA69F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6819953B2743EE90007FA69F;
+			remoteInfo = ARBeacon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DF21920348AEAA1EE115676 /* Pods-ARBeacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBeacon.release.xcconfig"; path = "Target Support Files/Pods-ARBeacon/Pods-ARBeacon.release.xcconfig"; sourceTree = "<group>"; };
+		38397B08D473411B4D5A5DC0 /* Pods_ARBeacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARBeacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6819953C2743EE90007FA69F /* ARBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6819953F2743EE90007FA69F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		681995412743EE90007FA69F /* AugmentedContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedContentView.swift; sourceTree = "<group>"; };
+		681995432743EE90007FA69F /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		681995452743EE91007FA69F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		681995482743EE91007FA69F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6819954E2743EE91007FA69F /* ARBeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARBeaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		681995522743EE91007FA69F /* ARBeaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARBeaconTests.swift; sourceTree = "<group>"; };
+		681995582743EE91007FA69F /* ARBeaconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARBeaconUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6819955C2743EE91007FA69F /* ARBeaconUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARBeaconUITests.swift; sourceTree = "<group>"; };
+		6819955E2743EE91007FA69F /* ARBeaconUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARBeaconUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		68554F9727604FAB00E6B391 /* ARGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARGameView.swift; sourceTree = "<group>"; };
+		68554F99276066CB00E6B391 /* View+Navigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Navigate.swift"; sourceTree = "<group>"; };
+		68A2A8662758930D00D7A675 /* covid19.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = covid19.usdz; sourceTree = "<group>"; };
+		68A2A86A2758940600D7A675 /* ARModelHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ARModelHandler.swift; path = ARBeacon/Model/ARModelHandler.swift; sourceTree = SOURCE_ROOT; };
+		68A2A86D2758B0F200D7A675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68A2A86F2758B65300D7A675 /* BeaconDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconDetector.swift; sourceTree = "<group>"; };
+		68A2A871275A6CF800D7A675 /* Brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
+		68A2A873275A707B00D7A675 /* Interaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interaction.swift; sourceTree = "<group>"; };
+		68A2A875275C13B100D7A675 /* ARViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewUtils.swift; sourceTree = "<group>"; };
+		68A2A877275C1C5A00D7A675 /* UIColor+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Random.swift"; sourceTree = "<group>"; };
+		68A2A879275E3B8E00D7A675 /* ARModelOnTapHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModelOnTapHandler.swift; sourceTree = "<group>"; };
+		68A2A87C275E4A4100D7A675 /* Covid19TapHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19TapHandler.swift; sourceTree = "<group>"; };
+		68A2A880275EE40F00D7A675 /* NeonXStickAni.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = NeonXStickAni.usdz; sourceTree = "<group>"; };
+		68A2A882275F17E300D7A675 /* HQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HQView.swift; sourceTree = "<group>"; };
+		68B9427A2743FAF10009D2F9 /* OpenTrivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTrivia.swift; sourceTree = "<group>"; };
+		68B9427D2743FB590009D2F9 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		68B942802746AE9F0009D2F9 /* ControlBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlBoard.swift; sourceTree = "<group>"; };
+		68B942842746AF390009D2F9 /* IBeaconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBeaconView.swift; sourceTree = "<group>"; };
+		DB83B18527546A9A00285BC9 /* MainNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationView.swift; sourceTree = "<group>"; };
+		DB83B1A6275474C200285BC9 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		DB83B1A8275474DA00285BC9 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		DB83B1AA275474F000285BC9 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		DB83B1AC2754752400285BC9 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		DBC449242758676A0075E6F1 /* ColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHex.swift; sourceTree = "<group>"; };
+		DBC44926275867950075E6F1 /* AppSetupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppSetupModel.swift; path = ARBeacon/Model/AppSetupModel.swift; sourceTree = SOURCE_ROOT; };
+		DBC44928275867B20075E6F1 /* AppSetupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppSetupViewModel.swift; path = ARBeacon/AppSetupViewModel.swift; sourceTree = SOURCE_ROOT; };
+		DBC4492A275867D50075E6F1 /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
+		DBFA0F5227589E9E00E6F5E4 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		DBFA0F542759386700E6F5E4 /* OldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldView.swift; sourceTree = "<group>"; };
+		DBFA0F562759666900E6F5E4 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		DBFA0F582759667D00E6F5E4 /* ARDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARDatabase.swift; sourceTree = "<group>"; };
+		F8C7A5068A531FC6400B1288 /* Pods-ARBeacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBeacon.debug.xcconfig"; path = "Target Support Files/Pods-ARBeacon/Pods-ARBeacon.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		681995392743EE90007FA69F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC4492E275868760075E6F1 /* CodeScanner in Frameworks */,
+				B22FD94DB7D2A6CBF381CC3F /* Pods_ARBeacon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6819954B2743EE91007FA69F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681995552743EE91007FA69F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		681995332743EE90007FA69F = {
+			isa = PBXGroup;
+			children = (
+				6819953E2743EE90007FA69F /* ARBeacon */,
+				681995512743EE91007FA69F /* ARBeaconTests */,
+				6819955B2743EE91007FA69F /* ARBeaconUITests */,
+				6819953D2743EE90007FA69F /* Products */,
+				E13BA9A4EAA572EF6B1D8F71 /* Pods */,
+				9308526043D59C6A82C500E1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6819953D2743EE90007FA69F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6819953C2743EE90007FA69F /* ARBeacon.app */,
+				6819954E2743EE91007FA69F /* ARBeaconTests.xctest */,
+				681995582743EE91007FA69F /* ARBeaconUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6819953E2743EE90007FA69F /* ARBeacon */ = {
+			isa = PBXGroup;
+			children = (
+				68A2A87B275E4A1500D7A675 /* TapHandlers */,
+				DBFA0F5A275966D900E6F5E4 /* Database */,
+				68B942872746B0CB0009D2F9 /* Model */,
+				68A2A86E2758B62E00D7A675 /* Beacon */,
+				68A2A865275892E900D7A675 /* ARModelAssets */,
+				68B942862746B0C00009D2F9 /* ViewModel */,
+				68B9427F2746AE740009D2F9 /* Views */,
+				68B9427C2743FB3B0009D2F9 /* Utils */,
+				6819953F2743EE90007FA69F /* AppDelegate.swift */,
+				681995432743EE90007FA69F /* Experience.rcproject */,
+				681995452743EE91007FA69F /* Assets.xcassets */,
+				681995472743EE91007FA69F /* Preview Content */,
+				68A2A86D2758B0F200D7A675 /* Info.plist */,
+			);
+			path = ARBeacon;
+			sourceTree = "<group>";
+		};
+		681995472743EE91007FA69F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				681995482743EE91007FA69F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		681995512743EE91007FA69F /* ARBeaconTests */ = {
+			isa = PBXGroup;
+			children = (
+				681995522743EE91007FA69F /* ARBeaconTests.swift */,
+			);
+			path = ARBeaconTests;
+			sourceTree = "<group>";
+		};
+		6819955B2743EE91007FA69F /* ARBeaconUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6819955C2743EE91007FA69F /* ARBeaconUITests.swift */,
+				6819955E2743EE91007FA69F /* ARBeaconUITestsLaunchTests.swift */,
+			);
+			path = ARBeaconUITests;
+			sourceTree = "<group>";
+		};
+		68A2A865275892E900D7A675 /* ARModelAssets */ = {
+			isa = PBXGroup;
+			children = (
+				68A2A880275EE40F00D7A675 /* NeonXStickAni.usdz */,
+				68A2A8662758930D00D7A675 /* covid19.usdz */,
+			);
+			path = ARModelAssets;
+			sourceTree = "<group>";
+		};
+		68A2A86E2758B62E00D7A675 /* Beacon */ = {
+			isa = PBXGroup;
+			children = (
+				68A2A86F2758B65300D7A675 /* BeaconDetector.swift */,
+			);
+			path = Beacon;
+			sourceTree = "<group>";
+		};
+		68A2A87B275E4A1500D7A675 /* TapHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				68A2A87C275E4A4100D7A675 /* Covid19TapHandler.swift */,
+			);
+			path = TapHandlers;
+			sourceTree = "<group>";
+		};
+		68B9427C2743FB3B0009D2F9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				68B9427D2743FB590009D2F9 /* StringUtils.swift */,
+				DBC449242758676A0075E6F1 /* ColorHex.swift */,
+				68A2A877275C1C5A00D7A675 /* UIColor+Random.swift */,
+				68A2A875275C13B100D7A675 /* ARViewUtils.swift */,
+				68554F99276066CB00E6B391 /* View+Navigate.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		68B9427F2746AE740009D2F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB83B18427546A6300285BC9 /* UIView */,
+				68B942832746AF170009D2F9 /* ibeacon */,
+				68B942822746AF0F0009D2F9 /* AR */,
+				68B942802746AE9F0009D2F9 /* ControlBoard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		68B942822746AF0F0009D2F9 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				681995412743EE90007FA69F /* AugmentedContentView.swift */,
+				68A2A882275F17E300D7A675 /* HQView.swift */,
+				68554F9727604FAB00E6B391 /* ARGameView.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		68B942832746AF170009D2F9 /* ibeacon */ = {
+			isa = PBXGroup;
+			children = (
+				68B942842746AF390009D2F9 /* IBeaconView.swift */,
+			);
+			path = ibeacon;
+			sourceTree = "<group>";
+		};
+		68B942862746B0C00009D2F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DBFA0F5227589E9E00E6F5E4 /* TaskViewModel.swift */,
+				DBC44928275867B20075E6F1 /* AppSetupViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		68B942872746B0CB0009D2F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB83B1B027549B1500285BC9 /* ARDatabase */,
+				DBC44926275867950075E6F1 /* AppSetupModel.swift */,
+				68A2A86A2758940600D7A675 /* ARModelHandler.swift */,
+				68A2A871275A6CF800D7A675 /* Brain.swift */,
+				68A2A873275A707B00D7A675 /* Interaction.swift */,
+				68A2A879275E3B8E00D7A675 /* ARModelOnTapHandler.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9308526043D59C6A82C500E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38397B08D473411B4D5A5DC0 /* Pods_ARBeacon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB83B18427546A6300285BC9 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				DB83B1A5275474AB00285BC9 /* TabViews */,
+				DB83B18527546A9A00285BC9 /* MainNavigationView.swift */,
+				DBC4492A275867D50075E6F1 /* QRScannerView.swift */,
+				DBFA0F542759386700E6F5E4 /* OldView.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		DB83B1A5275474AB00285BC9 /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				DB83B1A6275474C200285BC9 /* TaskView.swift */,
+				DB83B1A8275474DA00285BC9 /* HelpView.swift */,
+				DB83B1AA275474F000285BC9 /* AccountView.swift */,
+				DB83B1AC2754752400285BC9 /* MapView.swift */,
+			);
+			path = TabViews;
+			sourceTree = "<group>";
+		};
+		DB83B1B027549B1500285BC9 /* ARDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				DBFA0F562759666900E6F5E4 /* TaskModel.swift */,
+				DBFA0F582759667D00E6F5E4 /* ARDatabase.swift */,
+			);
+			name = ARDatabase;
+			path = ../ARDatabase;
+			sourceTree = "<group>";
+		};
+		DBFA0F5A275966D900E6F5E4 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				68B9427A2743FAF10009D2F9 /* OpenTrivia.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		E13BA9A4EAA572EF6B1D8F71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8C7A5068A531FC6400B1288 /* Pods-ARBeacon.debug.xcconfig */,
+				0DF21920348AEAA1EE115676 /* Pods-ARBeacon.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6819953B2743EE90007FA69F /* ARBeacon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 681995622743EE91007FA69F /* Build configuration list for PBXNativeTarget "ARBeacon" */;
+			buildPhases = (
+				1269C72BA5508A497FBCAD45 /* [CP] Check Pods Manifest.lock */,
+				681995382743EE90007FA69F /* Sources */,
+				681995392743EE90007FA69F /* Frameworks */,
+				6819953A2743EE90007FA69F /* Resources */,
+				84D10B67F8718C1EFDF9C611 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARBeacon;
+			packageProductDependencies = (
+				DBC4492D275868760075E6F1 /* CodeScanner */,
+			);
+			productName = ARBeacon;
+			productReference = 6819953C2743EE90007FA69F /* ARBeacon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6819954D2743EE91007FA69F /* ARBeaconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 681995652743EE91007FA69F /* Build configuration list for PBXNativeTarget "ARBeaconTests" */;
+			buildPhases = (
+				6819954A2743EE91007FA69F /* Sources */,
+				6819954B2743EE91007FA69F /* Frameworks */,
+				6819954C2743EE91007FA69F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				681995502743EE91007FA69F /* PBXTargetDependency */,
+			);
+			name = ARBeaconTests;
+			productName = ARBeaconTests;
+			productReference = 6819954E2743EE91007FA69F /* ARBeaconTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		681995572743EE91007FA69F /* ARBeaconUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 681995682743EE91007FA69F /* Build configuration list for PBXNativeTarget "ARBeaconUITests" */;
+			buildPhases = (
+				681995542743EE91007FA69F /* Sources */,
+				681995552743EE91007FA69F /* Frameworks */,
+				681995562743EE91007FA69F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6819955A2743EE91007FA69F /* PBXTargetDependency */,
+			);
+			name = ARBeaconUITests;
+			productName = ARBeaconUITests;
+			productReference = 681995582743EE91007FA69F /* ARBeaconUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		681995342743EE90007FA69F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					6819953B2743EE90007FA69F = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					6819954D2743EE91007FA69F = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 6819953B2743EE90007FA69F;
+					};
+					681995572743EE91007FA69F = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 6819953B2743EE90007FA69F;
+					};
+				};
+			};
+			buildConfigurationList = 681995372743EE90007FA69F /* Build configuration list for PBXProject "ARBeacon" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 681995332743EE90007FA69F;
+			packageReferences = (
+				DBC4492C275868760075E6F1 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
+			productRefGroup = 6819953D2743EE90007FA69F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6819953B2743EE90007FA69F /* ARBeacon */,
+				6819954D2743EE91007FA69F /* ARBeaconTests */,
+				681995572743EE91007FA69F /* ARBeaconUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6819953A2743EE90007FA69F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68A2A881275EE40F00D7A675 /* NeonXStickAni.usdz in Resources */,
+				68A2A8672758930D00D7A675 /* covid19.usdz in Resources */,
+				681995492743EE91007FA69F /* Preview Assets.xcassets in Resources */,
+				681995462743EE91007FA69F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6819954C2743EE91007FA69F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681995562743EE91007FA69F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1269C72BA5508A497FBCAD45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARBeacon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84D10B67F8718C1EFDF9C611 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARBeacon/Pods-ARBeacon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARBeacon/Pods-ARBeacon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARBeacon/Pods-ARBeacon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		681995382743EE90007FA69F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC44929275867B20075E6F1 /* AppSetupViewModel.swift in Sources */,
+				68A2A8702758B65300D7A675 /* BeaconDetector.swift in Sources */,
+				DB83B1A7275474C200285BC9 /* TaskView.swift in Sources */,
+				DB83B1AD2754752400285BC9 /* MapView.swift in Sources */,
+				68B942812746AE9F0009D2F9 /* ControlBoard.swift in Sources */,
+				68554F9A276066CB00E6B391 /* View+Navigate.swift in Sources */,
+				68B9427B2743FAF10009D2F9 /* OpenTrivia.swift in Sources */,
+				DBFA0F572759666900E6F5E4 /* TaskModel.swift in Sources */,
+				DB83B1A9275474DA00285BC9 /* HelpView.swift in Sources */,
+				68A2A878275C1C5A00D7A675 /* UIColor+Random.swift in Sources */,
+				DBC44927275867950075E6F1 /* AppSetupModel.swift in Sources */,
+				68A2A86B2758940600D7A675 /* ARModelHandler.swift in Sources */,
+				DBC449252758676A0075E6F1 /* ColorHex.swift in Sources */,
+				DB83B1AB275474F000285BC9 /* AccountView.swift in Sources */,
+				68A2A874275A707B00D7A675 /* Interaction.swift in Sources */,
+				DB83B18627546A9B00285BC9 /* MainNavigationView.swift in Sources */,
+				68B9427E2743FB590009D2F9 /* StringUtils.swift in Sources */,
+				68A2A872275A6CF800D7A675 /* Brain.swift in Sources */,
+				68554F9827604FAB00E6B391 /* ARGameView.swift in Sources */,
+				68A2A87A275E3B8E00D7A675 /* ARModelOnTapHandler.swift in Sources */,
+				DBFA0F5327589E9E00E6F5E4 /* TaskViewModel.swift in Sources */,
+				681995422743EE90007FA69F /* AugmentedContentView.swift in Sources */,
+				68A2A87D275E4A4100D7A675 /* Covid19TapHandler.swift in Sources */,
+				DBFA0F552759386700E6F5E4 /* OldView.swift in Sources */,
+				68A2A876275C13B100D7A675 /* ARViewUtils.swift in Sources */,
+				68A2A883275F17E300D7A675 /* HQView.swift in Sources */,
+				68B942852746AF390009D2F9 /* IBeaconView.swift in Sources */,
+				681995402743EE90007FA69F /* AppDelegate.swift in Sources */,
+				681995442743EE90007FA69F /* Experience.rcproject in Sources */,
+				DBC4492B275867D50075E6F1 /* QRScannerView.swift in Sources */,
+				DBFA0F592759667D00E6F5E4 /* ARDatabase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6819954A2743EE91007FA69F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				681995532743EE91007FA69F /* ARBeaconTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681995542743EE91007FA69F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6819955F2743EE91007FA69F /* ARBeaconUITestsLaunchTests.swift in Sources */,
+				6819955D2743EE91007FA69F /* ARBeaconUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		681995502743EE91007FA69F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6819953B2743EE90007FA69F /* ARBeacon */;
+			targetProxy = 6819954F2743EE91007FA69F /* PBXContainerItemProxy */;
+		};
+		6819955A2743EE91007FA69F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6819953B2743EE90007FA69F /* ARBeacon */;
+			targetProxy = 681995592743EE91007FA69F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		681995602743EE91007FA69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		681995612743EE91007FA69F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		681995632743EE91007FA69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8C7A5068A531FC6400B1288 /* Pods-ARBeacon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ARBeacon/Preview Content\"";
+				DEVELOPMENT_TEAM = DP8A74YR7Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ARBeacon/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We use Ibeacons to play this game!";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Enable ibeacons to play the game!";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "bluetooth-le arkit";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eaallen.ARBeaconNew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		681995642743EE91007FA69F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DF21920348AEAA1EE115676 /* Pods-ARBeacon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ARBeacon/Preview Content\"";
+				DEVELOPMENT_TEAM = DP8A74YR7Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ARBeacon/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We use Ibeacons to play this game!";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Enable ibeacons to play the game!";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "bluetooth-le arkit";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eaallen.ARBeaconNew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		681995662743EE91007FA69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DP8A74YR7Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eaallen.ARBeaconTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARBeacon.app/ARBeacon";
+			};
+			name = Debug;
+		};
+		681995672743EE91007FA69F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DP8A74YR7Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eaallen.ARBeaconTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARBeacon.app/ARBeacon";
+			};
+			name = Release;
+		};
+		681995692743EE91007FA69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DP8A74YR7Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eaallen.ARBeaconUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARBeacon;
+			};
+			name = Debug;
+		};
+		6819956A2743EE91007FA69F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DP8A74YR7Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eaallen.ARBeaconUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARBeacon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		681995372743EE90007FA69F /* Build configuration list for PBXProject "ARBeacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				681995602743EE91007FA69F /* Debug */,
+				681995612743EE91007FA69F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		681995622743EE91007FA69F /* Build configuration list for PBXNativeTarget "ARBeacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				681995632743EE91007FA69F /* Debug */,
+				681995642743EE91007FA69F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		681995652743EE91007FA69F /* Build configuration list for PBXNativeTarget "ARBeaconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				681995662743EE91007FA69F /* Debug */,
+				681995672743EE91007FA69F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		681995682743EE91007FA69F /* Build configuration list for PBXNativeTarget "ARBeaconUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				681995692743EE91007FA69F /* Debug */,
+				6819956A2743EE91007FA69F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DBC4492C275868760075E6F1 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DBC4492D275868760075E6F1 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBC4492C275868760075E6F1 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 681995342743EE90007FA69F /* Project object */;
+}
