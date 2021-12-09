@@ -44,8 +44,9 @@ struct SubTaskRowView: View {
             VStack {
                 Text(currentTask.taskName)
             
-                if currentTask.subTasks.count == 0 {
-                    ScientistViewForMission(displayText: String(currentTask.taskDescription))
+                if currentTask.subTasks.count == 0 { // if there are no subtasks
+                    
+                    ScientistViewForMission(arViewId: currentTask.arViewId, displayText: String(currentTask.taskDescription))
                         .frame(alignment: .bottomTrailing)
                     Spacer()
                 } else {
@@ -61,7 +62,7 @@ struct SubTaskRowView: View {
                         .padding(.vertical, 8)
                 //        .disabled(isEnabled)
                     }
-                    .overlay(ScientistViewForMission(displayText: String(currentTask.taskDescription)), alignment: .bottomTrailing)
+                    .overlay(ScientistViewForMission(arViewId: currentTask.arViewId, displayText: String(currentTask.taskDescription)), alignment: .bottomTrailing)
                 }
             } //end of VStack
         }

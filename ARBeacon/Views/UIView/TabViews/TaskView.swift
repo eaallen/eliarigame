@@ -31,7 +31,7 @@ struct TaskView: View {
                 List {
                     //loop through Tasks
                     ForEach(taskContent.tasks) { task in
-                        if task.dependsOn == nil {
+                        if task.dependsOn == "" {
                             TaskRowView(taskId: task.taskId, taskName: task.taskName, isCompleted: task.isCompleted, isEnabled: true)
                         } else {
 //                            if let index = taskContent.tasks.firstIndex(where: {$0.taskId == task.dependsOn})
