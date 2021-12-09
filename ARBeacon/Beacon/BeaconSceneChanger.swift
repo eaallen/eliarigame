@@ -1,67 +1,63 @@
 //
-//  BeaconDetector.swift
+//  BeaconSceneChanger.swift
 //  ARBeacon
 //
-//  Created by Gove Allen on 12/2/21.
+//  Created by Gove Allen on 12/9/21.
 //
 
 import Foundation
 import CoreLocation
-import Combine
-import SwiftUI
 
-
-
-// we tell the this what beacons we are interested in, it returns a list of those beacons with the range of them
-class BeaconDetector: BeaconBase {
+class BeaconSceneChanger: BeaconBase {
     var lastDistance = CLProximity.unknown
     var isScanning = false
-    var beaconUUID: UUID
     
     @Published var beaconDistance : CLProximity = .unknown
-    @Published var beaconDistances : [CLProximity] = []
+    @Published var proximityHistory : [CLProximity] = []
     @Published var shouldNavToHQ = false
     @Published var shouldNavToAug = false
     
-    init(beaconUUID: UUID){
-        self.beaconUUID = beaconUUID
-        
+    override init(){
         super.init()
     }
     
     override func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
         if isScanning {
+            print("updateing ranges")
             if beacons.count > 0 {
                 updateDistance(beacons[0].proximity)
-            } else {
-                updateDistance(.unknown)
             }
         }
     }
     
     func updateDistance(_ distance: CLProximity) {
         beaconDistance = distance
-        beaconDistances.insert(distance, at: 0)
+        proximityHistory.insert(distance, at: 0)
         
         // check for range counts
-        shouldNavToHQ = isConsecutiveMatch(distance: .immediate, count: 3) && !shouldNavToAug
-        shouldNavToAug = isConsecutiveMatch(distance: .near, count: 3) && !shouldNavToHQ
+        if isConsecutiveMatch(distance: .immediate, count: 5) && !shouldNavToAug {
+            shouldNavToHQ = true
+            isScanning = false
+        }else if isConsecutiveMatch(distance: .near, count: 5) && !shouldNavToHQ {
+            shouldNavToAug = true
+            isScanning = false
+        }
     }
     
     func isConsecutiveMatch(distance: CLProximity, count: Int) -> Bool{
-        if count > beaconDistances.count {
+        if count > proximityHistory.count {
             return false
         }
         
         for index in 0 ..< count {
-            if beaconDistances[index] != distance {
+            if proximityHistory[index] != distance {
                 return false
             }
         }
         return true
     }
     
-    func startScanning() {
+    func startScanning(beaconUUID: UUID) {
         let beaconRegion = CLBeaconRegion()
         locationManager?.startMonitoring(for: beaconRegion)
         locationManager?.startRangingBeacons(satisfying: .init(uuid: beaconUUID))
@@ -70,7 +66,7 @@ class BeaconDetector: BeaconBase {
         shouldNavToAug = false
     }
     
-    func stopScanning(){
+    func stopScanning(beaconUUID: UUID){
         let beaconRegion = CLBeaconRegion()
         locationManager?.stopMonitoring(for: beaconRegion)
         locationManager?.stopRangingBeacons(satisfying: .init(uuid: beaconUUID))

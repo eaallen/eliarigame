@@ -33,7 +33,7 @@ struct MainNavigationView: View {
                 Spacer()
                     .fullScreenCover(isPresented: $showCameraModal, content: {
                         ZStack {
-                            AugmentedContentView()
+                            IBeaconView()
                             Button(action: {showCameraModal.toggle()}, label: {
                                 Text("Close")
                             }).position(x: 50, y: 40)

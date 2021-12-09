@@ -15,9 +15,10 @@ struct HQView : View {
         ZStack {
             ARViewContainer(placeObject: $objectIsPlaced)
                 .edgesIgnoringSafeArea(.all)
-            
-            Button("Place Object"){
-                objectIsPlaced = true
+            if !objectIsPlaced{
+                Button("Place Object"){
+                    objectIsPlaced = true
+                }
             }
             
         }
@@ -48,14 +49,11 @@ struct HQView : View {
         
         func updateUIView(_ arView: ARGameView, context: Context) {
             if placeObject {
-                print("1------>")
                 var layout = SIMD3<Float>()
                 layout.x = 0
-                layout.y = 0
+                layout.y = -0.5
                 layout.z = -0.6
                 arView.placeObject(named: modelName, at: layout)
-                print("2---->")
-                
             }
         }
         
