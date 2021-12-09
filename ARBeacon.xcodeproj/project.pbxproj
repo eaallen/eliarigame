@@ -35,6 +35,7 @@
 		68E741DD2761E81D00E54C1F /* BeaconDebugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E741DC2761E81D00E54C1F /* BeaconDebugger.swift */; };
 		68E741E4276275D900E54C1F /* BeaconSceneChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E741E3276275D900E54C1F /* BeaconSceneChanger.swift */; };
 		68E741E627628CE500E54C1F /* HQTapHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E741E527628CE500E54C1F /* HQTapHandler.swift */; };
+		68E741E827629C0400E54C1F /* ArViewIdMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E741E727629C0400E54C1F /* ArViewIdMapping.swift */; };
 		B22FD94DB7D2A6CBF381CC3F /* Pods_ARBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38397B08D473411B4D5A5DC0 /* Pods_ARBeacon.framework */; };
 		DB83B18627546A9B00285BC9 /* MainNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B18527546A9A00285BC9 /* MainNavigationView.swift */; };
 		DB83B1A7275474C200285BC9 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B1A6275474C200285BC9 /* TaskView.swift */; };
@@ -111,6 +112,7 @@
 		68E741DC2761E81D00E54C1F /* BeaconDebugger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconDebugger.swift; sourceTree = "<group>"; };
 		68E741E3276275D900E54C1F /* BeaconSceneChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconSceneChanger.swift; sourceTree = "<group>"; };
 		68E741E527628CE500E54C1F /* HQTapHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HQTapHandler.swift; sourceTree = "<group>"; };
+		68E741E727629C0400E54C1F /* ArViewIdMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArViewIdMapping.swift; sourceTree = "<group>"; };
 		DB83B18527546A9A00285BC9 /* MainNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationView.swift; sourceTree = "<group>"; };
 		DB83B1A6275474C200285BC9 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		DB83B1A8275474DA00285BC9 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 		68B942822746AF0F0009D2F9 /* AR */ = {
 			isa = PBXGroup;
 			children = (
+				68E741E727629C0400E54C1F /* ArViewIdMapping.swift */,
 				681995412743EE90007FA69F /* AugmentedContentView.swift */,
 				68A2A882275F17E300D7A675 /* HQView.swift */,
 				68554F9727604FAB00E6B391 /* ARGameView.swift */,
@@ -596,6 +599,7 @@
 				DBFA0F5327589E9E00E6F5E4 /* TaskViewModel.swift in Sources */,
 				681995422743EE90007FA69F /* AugmentedContentView.swift in Sources */,
 				68A2A87D275E4A4100D7A675 /* Covid19TapHandler.swift in Sources */,
+				68E741E827629C0400E54C1F /* ArViewIdMapping.swift in Sources */,
 				DBFA0F552759386700E6F5E4 /* OldView.swift in Sources */,
 				68A2A876275C13B100D7A675 /* ARViewUtils.swift in Sources */,
 				68A2A883275F17E300D7A675 /* HQView.swift in Sources */,
