@@ -34,6 +34,7 @@
 		68E741DB2761E5C100E54C1F /* BeaconBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E741DA2761E5C100E54C1F /* BeaconBase.swift */; };
 		68E741DD2761E81D00E54C1F /* BeaconDebugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E741DC2761E81D00E54C1F /* BeaconDebugger.swift */; };
 		68E741E4276275D900E54C1F /* BeaconSceneChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E741E3276275D900E54C1F /* BeaconSceneChanger.swift */; };
+		68E741E627628CE500E54C1F /* HQTapHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E741E527628CE500E54C1F /* HQTapHandler.swift */; };
 		B22FD94DB7D2A6CBF381CC3F /* Pods_ARBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38397B08D473411B4D5A5DC0 /* Pods_ARBeacon.framework */; };
 		DB83B18627546A9B00285BC9 /* MainNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B18527546A9A00285BC9 /* MainNavigationView.swift */; };
 		DB83B1A7275474C200285BC9 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B1A6275474C200285BC9 /* TaskView.swift */; };
@@ -109,6 +110,7 @@
 		68E741DA2761E5C100E54C1F /* BeaconBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconBase.swift; sourceTree = "<group>"; };
 		68E741DC2761E81D00E54C1F /* BeaconDebugger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconDebugger.swift; sourceTree = "<group>"; };
 		68E741E3276275D900E54C1F /* BeaconSceneChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconSceneChanger.swift; sourceTree = "<group>"; };
+		68E741E527628CE500E54C1F /* HQTapHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HQTapHandler.swift; sourceTree = "<group>"; };
 		DB83B18527546A9A00285BC9 /* MainNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationView.swift; sourceTree = "<group>"; };
 		DB83B1A6275474C200285BC9 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		DB83B1A8275474DA00285BC9 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				68A2A87C275E4A4100D7A675 /* Covid19TapHandler.swift */,
+				68E741E527628CE500E54C1F /* HQTapHandler.swift */,
 			);
 			path = TapHandlers;
 			sourceTree = "<group>";
@@ -572,6 +575,7 @@
 				68E741DD2761E81D00E54C1F /* BeaconDebugger.swift in Sources */,
 				68554F9A276066CB00E6B391 /* View+Navigate.swift in Sources */,
 				DBFA0F572759666900E6F5E4 /* TaskModel.swift in Sources */,
+				68E741E627628CE500E54C1F /* HQTapHandler.swift in Sources */,
 				DB83B1A9275474DA00285BC9 /* HelpView.swift in Sources */,
 				DBFB0A6C2761CDF100DEA056 /* ContinueButtonView.swift in Sources */,
 				DBFB0A6A2761CDDC00DEA056 /* ScientistView.swift in Sources */,

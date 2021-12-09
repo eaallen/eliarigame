@@ -31,7 +31,7 @@ struct HQView : View {
         func makeUIView(context: Context) -> ARGameView {
             let arView = ARGameView(frame: .zero, cameraMode: .ar, automaticallyConfigureSession: true)
             
-            arView.enableTapGesture(handler: nil)
+            arView.enableTapGesture(handler: HQTapHandler())
             
             let config = ARWorldTrackingConfiguration()
             config.planeDetection = [.horizontal, .vertical]
