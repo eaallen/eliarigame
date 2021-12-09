@@ -36,6 +36,9 @@
 		68E741E4276275D900E54C1F /* BeaconSceneChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E741E3276275D900E54C1F /* BeaconSceneChanger.swift */; };
 		68E741E627628CE500E54C1F /* HQTapHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E741E527628CE500E54C1F /* HQTapHandler.swift */; };
 		68E741E827629C0400E54C1F /* ArViewIdMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E741E727629C0400E54C1F /* ArViewIdMapping.swift */; };
+		68E741EA2762AC0800E54C1F /* NeonVentAniX.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 68E741E92762AC0800E54C1F /* NeonVentAniX.usdz */; };
+		68E741EC2762B00500E54C1F /* NeonVentFan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E741EB2762B00500E54C1F /* NeonVentFan.swift */; };
+		68E741EF2762B5BA00E54C1F /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 68E741EE2762B5BA00E54C1F /* FocusEntity */; };
 		B22FD94DB7D2A6CBF381CC3F /* Pods_ARBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38397B08D473411B4D5A5DC0 /* Pods_ARBeacon.framework */; };
 		DB83B18627546A9B00285BC9 /* MainNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B18527546A9A00285BC9 /* MainNavigationView.swift */; };
 		DB83B1A7275474C200285BC9 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B1A6275474C200285BC9 /* TaskView.swift */; };
@@ -113,6 +116,8 @@
 		68E741E3276275D900E54C1F /* BeaconSceneChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconSceneChanger.swift; sourceTree = "<group>"; };
 		68E741E527628CE500E54C1F /* HQTapHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HQTapHandler.swift; sourceTree = "<group>"; };
 		68E741E727629C0400E54C1F /* ArViewIdMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArViewIdMapping.swift; sourceTree = "<group>"; };
+		68E741E92762AC0800E54C1F /* NeonVentAniX.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = NeonVentAniX.usdz; sourceTree = "<group>"; };
+		68E741EB2762B00500E54C1F /* NeonVentFan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeonVentFan.swift; sourceTree = "<group>"; };
 		DB83B18527546A9A00285BC9 /* MainNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationView.swift; sourceTree = "<group>"; };
 		DB83B1A6275474C200285BC9 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		DB83B1A8275474DA00285BC9 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
@@ -141,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68E741EF2762B5BA00E54C1F /* FocusEntity in Frameworks */,
 				DBC4492E275868760075E6F1 /* CodeScanner in Frameworks */,
 				B22FD94DB7D2A6CBF381CC3F /* Pods_ARBeacon.framework in Frameworks */,
 			);
@@ -232,6 +238,7 @@
 		68A2A865275892E900D7A675 /* ARModelAssets */ = {
 			isa = PBXGroup;
 			children = (
+				68E741E92762AC0800E54C1F /* NeonVentAniX.usdz */,
 				68A2A880275EE40F00D7A675 /* NeonXStickAni.usdz */,
 				68A2A8662758930D00D7A675 /* covid19.usdz */,
 			);
@@ -288,6 +295,7 @@
 				681995412743EE90007FA69F /* AugmentedContentView.swift */,
 				68A2A882275F17E300D7A675 /* HQView.swift */,
 				68554F9727604FAB00E6B391 /* ARGameView.swift */,
+				68E741EB2762B00500E54C1F /* NeonVentFan.swift */,
 			);
 			path = AR;
 			sourceTree = "<group>";
@@ -406,6 +414,7 @@
 			name = ARBeacon;
 			packageProductDependencies = (
 				DBC4492D275868760075E6F1 /* CodeScanner */,
+				68E741EE2762B5BA00E54C1F /* FocusEntity */,
 			);
 			productName = ARBeacon;
 			productReference = 6819953C2743EE90007FA69F /* ARBeacon.app */;
@@ -481,6 +490,7 @@
 			mainGroup = 681995332743EE90007FA69F;
 			packageReferences = (
 				DBC4492C275868760075E6F1 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				68E741ED2762B5BA00E54C1F /* XCRemoteSwiftPackageReference "FocusEntity" */,
 			);
 			productRefGroup = 6819953D2743EE90007FA69F /* Products */;
 			projectDirPath = "";
@@ -502,6 +512,7 @@
 				68A2A8672758930D00D7A675 /* covid19.usdz in Resources */,
 				681995492743EE91007FA69F /* Preview Assets.xcassets in Resources */,
 				681995462743EE91007FA69F /* Assets.xcassets in Resources */,
+				68E741EA2762AC0800E54C1F /* NeonVentAniX.usdz in Resources */,
 				DBFB0A622761CD6800DEA056 /* tasks.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,6 +616,7 @@
 				68A2A883275F17E300D7A675 /* HQView.swift in Sources */,
 				68B942852746AF390009D2F9 /* IBeaconView.swift in Sources */,
 				681995402743EE90007FA69F /* AppDelegate.swift in Sources */,
+				68E741EC2762B00500E54C1F /* NeonVentFan.swift in Sources */,
 				DBFB0A6E2761CE2800DEA056 /* WelcomeView.swift in Sources */,
 				DBFB0A642761CD8200DEA056 /* TaskJSON.swift in Sources */,
 				DBFB0A662761CDA500DEA056 /* ReadJsonData.swift in Sources */,
@@ -772,7 +784,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ARBeacon/Preview Content\"";
-				DEVELOPMENT_TEAM = KJAZ5NGQ72;
+				DEVELOPMENT_TEAM = 6P5PLY4A3A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARBeacon/Info.plist;
@@ -791,7 +803,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.analytico.aribeacon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eaallen.eliarigame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -810,7 +822,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ARBeacon/Preview Content\"";
-				DEVELOPMENT_TEAM = KJAZ5NGQ72;
+				DEVELOPMENT_TEAM = 6P5PLY4A3A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARBeacon/Info.plist;
@@ -829,7 +841,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.analytico.aribeacon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eaallen.eliarigame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -976,6 +988,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		68E741ED2762B5BA00E54C1F /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		DBC4492C275868760075E6F1 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/twostraws/CodeScanner";
@@ -987,6 +1007,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		68E741EE2762B5BA00E54C1F /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68E741ED2762B5BA00E54C1F /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
 		DBC4492D275868760075E6F1 /* CodeScanner */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DBC4492C275868760075E6F1 /* XCRemoteSwiftPackageReference "CodeScanner" */;

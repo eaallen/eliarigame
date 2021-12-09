@@ -67,8 +67,8 @@
     {
         "task_id": "3fd0a6b1-7daf-4e19-9b4b-77eb99758a92", 
         "ar_view_id": "50cbd16c-e1b0-492e-9736-183cb3191801",
-        "task_name": "Task 5",
-        "task_description": "Task 5 Description",
+        "task_name": "Turn on the vent Fan!",
+        "task_description": "Find and turn on the Vent",
         "task_order_number": 5,
         "is_completed": false, 
         "depends_on": "41fee47d-9c26-4d9c-b670-1c3e92e5a71b",

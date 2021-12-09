@@ -9,6 +9,15 @@
           "revision": "8a9ce909a4ea502d4a2ccf327ae8c16b7e48e740",
           "version": null
         }
+      },
+      {
+        "package": "FocusEntity",
+        "repositoryURL": "https://github.com/maxxfrazer/FocusEntity.git",
+        "state": {
+          "branch": null,
+          "revision": "615af712434dcf0e4800909f6291d6a6a088b754",
+          "version": "2.2.4"
+        }
       }
     ]
   },
