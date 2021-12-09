@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		681995402743EE90007FA69F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6819953F2743EE90007FA69F /* AppDelegate.swift */; };
 		681995422743EE90007FA69F /* AugmentedContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681995412743EE90007FA69F /* AugmentedContentView.swift */; };
-		681995442743EE90007FA69F /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 681995432743EE90007FA69F /* Experience.rcproject */; };
 		681995462743EE91007FA69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 681995452743EE91007FA69F /* Assets.xcassets */; };
 		681995492743EE91007FA69F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 681995482743EE91007FA69F /* Preview Assets.xcassets */; };
 		681995532743EE91007FA69F /* ARBeaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681995522743EE91007FA69F /* ARBeaconTests.swift */; };
@@ -72,7 +71,6 @@
 		6819953C2743EE90007FA69F /* ARBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6819953F2743EE90007FA69F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		681995412743EE90007FA69F /* AugmentedContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedContentView.swift; sourceTree = "<group>"; };
-		681995432743EE90007FA69F /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		681995452743EE91007FA69F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		681995482743EE91007FA69F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6819954E2743EE91007FA69F /* ARBeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARBeaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,7 +173,6 @@
 				68B9427F2746AE740009D2F9 /* Views */,
 				68B9427C2743FB3B0009D2F9 /* Utils */,
 				6819953F2743EE90007FA69F /* AppDelegate.swift */,
-				681995432743EE90007FA69F /* Experience.rcproject */,
 				681995452743EE91007FA69F /* Assets.xcassets */,
 				681995472743EE91007FA69F /* Preview Content */,
 				68A2A86D2758B0F200D7A675 /* Info.plist */,
@@ -563,7 +560,6 @@
 				68A2A883275F17E300D7A675 /* HQView.swift in Sources */,
 				68B942852746AF390009D2F9 /* IBeaconView.swift in Sources */,
 				681995402743EE90007FA69F /* AppDelegate.swift in Sources */,
-				681995442743EE90007FA69F /* Experience.rcproject in Sources */,
 				DBC4492B275867D50075E6F1 /* QRScannerView.swift in Sources */,
 				DBFA0F592759667D00E6F5E4 /* ARDatabase.swift in Sources */,
 			);
@@ -728,7 +724,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ARBeacon/Preview Content\"";
-				DEVELOPMENT_TEAM = DP8A74YR7Z;
+				DEVELOPMENT_TEAM = KJAZ5NGQ72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARBeacon/Info.plist;
@@ -747,7 +743,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.eaallen.ARBeaconNew;
+				PRODUCT_BUNDLE_IDENTIFIER = com.analytico.aribeacon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -766,7 +762,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ARBeacon/Preview Content\"";
-				DEVELOPMENT_TEAM = DP8A74YR7Z;
+				DEVELOPMENT_TEAM = KJAZ5NGQ72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARBeacon/Info.plist;
@@ -785,7 +781,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.eaallen.ARBeaconNew;
+				PRODUCT_BUNDLE_IDENTIFIER = com.analytico.aribeacon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
