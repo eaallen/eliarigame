@@ -16,6 +16,7 @@ struct Covid19TapHandler : ARModelOnTapHandler {
         tapLocation: CGPoint,
         arGameView: ARGameView
     ){
+        
         if let ent = results.first?.entity{
             
             // roll it!
@@ -37,6 +38,7 @@ struct Covid19TapHandler : ARModelOnTapHandler {
                     
                     wait(Self.Constants.shrinkDuration - 0.1){
                         ent.removeFromParent()
+                        
                     }
                 }
             }

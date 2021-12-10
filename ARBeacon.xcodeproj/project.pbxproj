@@ -788,7 +788,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ARBeacon/Preview Content\"";
-				DEVELOPMENT_TEAM = 6P5PLY4A3A;
+				DEVELOPMENT_TEAM = KJAZ5NGQ72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARBeacon/Info.plist;
@@ -808,7 +808,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.eaallen.eliarigame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.analytico.eliarigame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -827,7 +827,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ARBeacon/Preview Content\"";
-				DEVELOPMENT_TEAM = 6P5PLY4A3A;
+				DEVELOPMENT_TEAM = KJAZ5NGQ72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARBeacon/Info.plist;
@@ -847,7 +847,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.eaallen.eliarigame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.analytico.eliarigame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
