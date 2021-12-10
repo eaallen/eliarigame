@@ -1,7 +1,7 @@
 [
     {
         "task_id": "94b744f5-9f7f-4486-ba30-8888eed5ec8b", 
-        "ar_view_id": "b554751d-f404-4045-928b-ca78af5d3088",
+        "ar_view_id": "",
         "task_name": "Put On Your Mask",
         "task_description": "Before we get started, put on your virtual mask to protect yourself and others from COVID-19!", 
         "task_order_number": 1,
@@ -11,7 +11,7 @@
     },
     {
         "task_id": "3a63b6d3-9cca-4345-b6a0-c162897d9169", 
-        "ar_view_id": "44e9fd5f-d82d-4557-810b-f688f1861946",
+        "ar_view_id": "",
         "task_name": "Find the Equipment",
         "task_description": "We lost our equipment! Can you help us find it?",
         "task_order_number": 2,
@@ -76,7 +76,7 @@
     },
     {
         "task_id": "629cbf4a-33b1-4e4d-a057-6e07913e1985", 
-        "ar_view_id": "0b4dc595-ba0f-4d0f-9ae6-b6ad03ce6138",
+        "ar_view_id": "",
         "task_name": "Task 6",
         "task_description": "Task 6 Description",
         "task_order_number": 6,
@@ -86,7 +86,7 @@
     },
     {
         "task_id": "7297a33b-f621-4843-bba3-7b99b68a2d13", 
-        "ar_view_id": "32f52cb9-035b-4602-aa11-a0ba9162116b",
+        "ar_view_id": "",
         "task_name": "Task 7",
         "task_description": "Task 7 description",
         "task_order_number": 7,

@@ -19,7 +19,7 @@ struct TaskView: View {
     
     var body: some View {
         
-        ZStack {
+        //ZStack {
             VStack {
                 // MARK: - Header
                 VStack(spacing: 0) {
@@ -42,9 +42,9 @@ struct TaskView: View {
                 }
                 .offset(x: 0, y: -50)
                 .padding(.bottom, 10)
-                .overlay(ScientistView(displayText: "Complete the tasks to help stop Covid-19"), alignment: .bottomTrailing)
+                .overlay(ScientistView(displayText: ""), alignment: .bottomTrailing)
             }
             .background(.clear)
-        }
+       // }
     }
 }
