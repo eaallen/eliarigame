@@ -59,7 +59,7 @@ struct ScientistViewForMission: View {
                             .padding(.all, 10)
                         
                     }
-                    .disabled(buttonDisabled)
+//                    .disabled(buttonDisabled)
                     .font(.system(size: 24))
                     .frame(width: FileConstants.frameWidth, height: FileConstants.frameHeight, alignment: .center)
                     .background(animate ? Constants.customDarkGreen : Constants.customGreen)

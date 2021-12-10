@@ -48,10 +48,10 @@ struct NeonVentFanView: View {
         }
         
         func updateUIView(_ arView: ARGameView, context: Context) {
-            if placeObject {
-                let anchorEntity = AnchorEntity(plane: .any)
-                arView.addModelEntityToAnchorThenScene(modelName: modelName, scaleTo: nil, anchor: anchorEntity)
-            }
+//            if placeObject {
+//                let anchorEntity = AnchorEntity(plane: .any)
+//                arView.addModelEntityToAnchorThenScene(modelName: modelName, scaleTo: nil, anchor: anchorEntity)
+//            }
         }
         
         

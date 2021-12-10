@@ -43,7 +43,44 @@ struct ContinueButtonView: View {
         guard !animate else { return }
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             withAnimation {
-                Animation
+                _ = Animation
+                    .easeInOut(duration: 2.0)
+                    .repeatForever()
+            }
+            animate.toggle()
+        }
+    }
+}
+
+
+struct CompleteButton: View {
+    
+    @State private var navigateToView: Bool = false
+    @State private var animate: Bool = false
+    
+    var body: some View {
+        ZStack{
+            Rectangle()
+                .background(Constants.customGreen)
+                .frame(width: 200, height: 75, alignment: .center)
+                .cornerRadius(15)
+            Text("Continue")
+                .font(.system(size: 24))
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+                
+        }
+        .onTapGesture {
+            navigateToView = true //navigate onClick!
+        }
+        .navigate(to: MainNavigationView(), when: $navigateToView)
+    }
+    
+    func addAnimation() {
+        guard !animate else { return }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            withAnimation {
+                _ = Animation
                     .easeInOut(duration: 2.0)
                     .repeatForever()
             }
