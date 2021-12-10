@@ -133,7 +133,7 @@ struct TopHeader: View {
     var body: some View {
         
         VStack(spacing: 25){
-            HStack{
+            HStack(alignment: .center){
                 Text(currentTab)
                     .fontWeight(.bold)
                     .font(.system(size: 32))

@@ -48,7 +48,7 @@ struct SubTaskRowView: View {
                     
                     ScientistViewForMission(arViewId: currentTask.arViewId, displayText: String(currentTask.taskDescription))
                         .frame(alignment: .bottomTrailing)
-                    Spacer()
+                    //Spacer()
                 } else {
                     Spacer()
                     List(currentTask.subTasks) { subTask in
@@ -65,6 +65,7 @@ struct SubTaskRowView: View {
                     .overlay(ScientistViewForMission(arViewId: currentTask.arViewId, displayText: String(currentTask.taskDescription)), alignment: .bottomTrailing)
                 }
             } //end of VStack
+            
         }
     }
 }

@@ -20,7 +20,7 @@ struct ScientistView: View {
                             .font(.system(size: 15, weight: .bold))
                             .frame(width: 200, height: 80, alignment: .center)
                             .offset(x: -105, y: -40)
-                         )
+                )
         }
         .background(.clear)
     }
@@ -45,33 +45,35 @@ struct ScientistViewForMission: View {
                     .overlay(Image("scientist")
                                 .padding(20)
                                 .offset(x: 80, y: 250)
-                             )
-                NavigationLink(destination: ArViewIdMapping(id: arViewId)) {
-    //                buttonDisabled = true
-    //                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-    //                    buttonDisabled = false
-    //                }
-                    Text("Continue")
-                        .navigationTitle("")
-                        .navigationBarHidden(true)
-                        .foregroundColor(Constants.white)
-                        .padding(.all, 10)
-                    
+                    )
+                if arViewId != "" {
+                    NavigationLink(destination: ArViewIdMapping(id: arViewId)) {
+                        //                buttonDisabled = true
+                        //                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                        //                    buttonDisabled = false
+                        //                }
+                        Text("Continue")
+                        //.navigationTitle("")
+                        //.navigationBarHidden(true)
+                            .foregroundColor(Constants.white)
+                            .padding(.all, 10)
+                        
+                    }
+                    .disabled(buttonDisabled)
+                    .font(.system(size: 24))
+                    .frame(width: FileConstants.frameWidth, height: FileConstants.frameHeight, alignment: .center)
+                    .background(animate ? Constants.customDarkGreen : Constants.customGreen)
+                    .cornerRadius(FileConstants.cornerRadius)
+                    .padding(.horizontal, animate ? 10 : 20)
+                    .shadow(
+                        color: animate ? Constants.customGreen : Constants.customDarkGreen,
+                        radius: animate ? 20 : 10,
+                        x: 0,
+                        y: animate ? 20 : 10)
+                    .scaleEffect(animate ? 1.05 : 1.0)
+                    //            .offset(y: animate ? 3 : 0)
+                    .offset(x: -70, y: 200)
                 }
-                .disabled(buttonDisabled)
-                .font(.system(size: 24))
-                .frame(width: FileConstants.frameWidth, height: FileConstants.frameHeight, alignment: .center)
-                .background(animate ? Constants.customDarkGreen : Constants.customGreen)
-                .cornerRadius(FileConstants.cornerRadius)
-                .padding(.horizontal, animate ? 10 : 20)
-                .shadow(
-                    color: animate ? Constants.customGreen : Constants.customDarkGreen,
-                    radius: animate ? 20 : 10,
-                    x: 0,
-                    y: animate ? 20 : 10)
-                .scaleEffect(animate ? 1.05 : 1.0)
-    //            .offset(y: animate ? 3 : 0)
-                .offset(x: -70, y: 200)
             }
             
             .background(.clear)
